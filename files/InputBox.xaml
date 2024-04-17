@@ -1,0 +1,24 @@
+﻿<Window x:Class="files.InputBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:files"
+        mc:Ignorable="d"
+        Title="InputBox" Height="250" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="0" x:Name="TextInput"/>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Content="ОК" Grid.Column="0" Click="Button_Click_1"></Button>
+            <Button Content="Отмена" Grid.Column="1" Click="Button_Click"></Button>
+        </Grid>
+    </Grid>
+</Window>
